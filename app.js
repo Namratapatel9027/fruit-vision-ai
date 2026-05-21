@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- 1. CONFIGURATION ---
     // You will replace this URL after creating your API Gateway
-    const API_URL = "https://fcyjzmmptl.execute-api.ap-south-1.amazonaws.com/prod/predict";
+    const API_URL = "https://fcyjzmpptl.execute-api.ap-south-1.amazonaws.com/prod/predict";
 
     // Scroll Animations (Intersection Observer)
     const observer = new IntersectionObserver((entries) => {
