@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FruitVision AI | Discover the Power of Nature</title>
+    <meta name="description"
+        content="Learn about the health benefits of fruits and classify them instantly using our AI.">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">FruitVision<span>.AI</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#recommendations">Diet</a></li>
+                <li><a href="#classifier" class="btn-nav">Try AI</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="section hero-section animate-on-scroll">
+        <div class="hero-content">
+            <h1 class="slide-up">Discover the <br><span class="text-gradient">Power of Nature</span></h1>
+            <p class="slide-up delay-1">Explore the incredible health benefits of fruits and classify them instantly
+                using our advanced AI vision technology.</p>
+            <div class="hero-buttons slide-up delay-2">
+                <a href="#classifier" class="primary-btn">Identify Fruit</a>
+                <a href="#about" class="secondary-btn">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-visual fade-in delay-3">
+            <div class="floating-element glass-shape"></div>
+            <div class="floating-element glass-shape-2"></div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section animate-on-scroll">
+        <div class="section-container">
+            <div class="about-text slide-right">
+                <h2 class="section-title">Why Eat <span class="text-gradient">Fruits?</span></h2>
+                <p>Fruits are nature's ultimate fast food. Packed with essential vitamins, minerals, and fiber, they
+                    provide a clean and sustainable source of energy.</p>
+                <p>A diet rich in diverse fruits can help lower blood pressure, reduce the risk of heart disease and
+                    stroke, prevent some types of cancer, and lower the risk of eye and digestive problems.</p>
+            </div>
+            <div class="about-visual slide-left">
+                <div class="glass-image-card">
+                    <h3>Nature's Candy</h3>
+                    <p>Sweet, nutritious, and perfectly packaged by the earth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits Section -->
+    <section id="benefits" class="section benefits-section animate-on-scroll">
+        <div class="section-container column">
+            <h2 class="section-title text-center slide-up">Incredible <span class="text-gradient">Health Benefits</span>
+            </h2>
+            <div class="benefits-grid">
+                <div class="benefit-card glass-card fade-up delay-1">
+                    <div class="icon">🛡️</div>
+                    <h3>Immunity Boost</h3>
+                    <p>Rich in Vitamin C and antioxidants that strengthen your immune system.</p>
+                </div>
+                <div class="benefit-card glass-card fade-up delay-2">
+                    <div class="icon">❤️</div>
+                    <h3>Heart Health</h3>
+                    <p>Potassium and fiber help manage cholesterol and blood pressure.</p>
+                </div>
+                <div class="benefit-card glass-card fade-up delay-3">
+                    <div class="icon">💧</div>
+                    <h3>Hydration</h3>
+                    <p>Many fruits are over 80% water, keeping you hydrated and glowing.</p>
+                </div>
+                <div class="benefit-card glass-card fade-up delay-4">
+                    <div class="icon">🧠</div>
+                    <h3>Brain Function</h3>
+                    <p>Flavonoids found in berries can improve memory and delay cognitive decline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="section recommendations-section animate-on-scroll">
+        <div class="section-container">
+            <div class="recommendations-content slide-up">
+                <h2 class="section-title">What to <span class="text-gradient">Take Daily</span></h2>
+                <ul class="diet-list">
+                    <li>
+                        <strong>Aim for Variety:</strong>
+                        Eat the rainbow. Different colors provide different nutrients.
+                    </li>
+                    <li>
+                        <strong>Portion Size:</strong>
+                        The AHA recommends 4 servings of fruit per day (e.g., 1 medium apple = 1 serving).
+                    </li>
+                    <li>
+                        <strong>Morning Energy:</strong>
+                        Bananas and apples are excellent for sustained morning energy.
+                    </li>
+                    <li>
+                        <strong>Post-Workout:</strong>
+                        Watermelon and oranges help replenish fluids and glycogen stores.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classifier Section -->
+    <section id="classifier" class="section classifier-section animate-on-scroll">
+        <div class="section-container column">
+            <h2 class="section-title text-center slide-up">Try the <span class="text-gradient">AI Classifier</span></h2>
+
+            <div class="glass-card app-card fade-in delay-2">
+                <header>
+                    <h3>Identify Any Fruit</h3>
+                    <p>Upload a photo of a fruit to instantly identify it.</p>
+                </header>
+
+                <div class="app-content">
+                    <!-- Upload Area -->
+                    <div id="upload-section" class="upload-area active">
+                        <input type="file" id="file-input" accept="image/jpeg, image/png, image/webp" hidden>
+                        <div class="upload-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="17 8 12 3 7 8"></polyline>
+                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h2>Drag & Drop an image here</h2>
+                        <p>or click to browse</p>
+                        <button class="primary-btn" id="browse-btn">Browse Files</button>
+                    </div>
+
+                    <!-- Preview and Analysis Area -->
+                    <div id="analysis-section" class="analysis-area">
+                        <div class="image-container">
+                            <img id="image-preview" src="" alt="Fruit Preview">
+                            <div id="scanner" class="scanner"></div>
+                            <div id="scanning-text" class="scanning-text">Analyzing image...</div>
+                        </div>
+
+                        <div id="result-container" class="result-container hidden">
+                            <div class="result-header">Classification Result</div>
+                            <h2 id="fruit-name" class="fruit-name">Apple</h2>
+                            <div class="confidence-bar-container">
+                                <div class="confidence-info">
+                                    <span>Confidence</span>
+                                    <span id="confidence-score">98%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div id="confidence-fill" class="progress-fill"></div>
+                                </div>
+                            </div>
+                            <button class="secondary-btn" id="reset-btn">Analyze Another</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FruitVision AI. All rights reserved.</p>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
